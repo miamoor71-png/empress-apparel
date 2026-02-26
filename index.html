@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empress Apparel</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container">
+            <h1 class="logo">Empress Apparel</h1>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#shop">Shop</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <img src="images/hero-banner.jpg" alt="Empress Apparel Banner">
+        <div class="hero-text">
+            <h2>Welcome to Empress Apparel</h2>
+            <p>Modern fashion for every woman</p>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories">
+        <h2>Shop By Category</h2>
+        <div class="category-grid">
+            <div class="category">Clothes</div>
+            <div class="category">Bags</div>
+            <div class="category">Shoes</div>
+            <div class="category">Hair</div>
+            <div class="category">Jewellery</div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="shop" class="products">
+        <h2>Featured Products</h2>
+        <div class="products-grid">
+            <div class="product" data-category="Clothes">
+                <img src="images/clothes1.jpg" alt="Clothes 1">
+                <h3>Stylish Dress</h3>
+                <p>$49.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Bags">
+                <img src="images/bag1.jpg" alt="Bag 1">
+                <h3>Leather Bag</h3>
+                <p>$79.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Shoes">
+                <img src="images/shoes1.jpg" alt="Shoes 1">
+                <h3>Elegant Heels</h3>
+                <p>$59.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Hair">
+                <img src="images/hair1.jpg" alt="Hair 1">
+                <h3>Wig Collection</h3>
+                <p>$89.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-category="Jewellery">
+                <img src="images/jewellery1.jpg" alt="Jewellery 1">
+                <h3>Gold Necklace</h3>
+                <p>$129.99</p>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+
+        <!-- Category Filter -->
+        <div class="filter">
+            <label for="categoryFilter">Filter by Category:</label>
+            <select id="categoryFilter">
+                <option value="All">All</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Bags">Bags</option>
+                <option value="Shoes">Shoes</option>
+                <option value="Hair">Hair</option>
+                <option value="Jewellery">Jewellery</option>
+            </select>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Empress Apparel</h2>
+        <p>Empress Apparel is dedicated to bringing modern, elegant fashion to women aged 18-45. Our collection includes clothes, bags, shoes, jewellery, and premium hair products. We focus on quality, style, and affordability.</p>
+    </section>
+
+    <!-- Cart Section -->
+    <section class="cart-section">
+        <h2>Shopping Cart</h2>
+        <div id="cart-items"></div>
+        <p id="total-price">Total: $0</p>
+        <button id="checkout">Checkout</button>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Call/WhatsApp: +2348167373808</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Empress Apparel. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+  </html>
